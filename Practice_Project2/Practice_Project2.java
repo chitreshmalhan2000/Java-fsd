@@ -1,10 +1,4 @@
 package Practice_Project2;
-
-class DefaultAccessModifier {
-    void display() {
-        System.out.println("This is a default access modifier.");
-    }
-}
 public class Practice_Project2 {
     public static void main(String[] args) {
         DefaultAccessModifier defaultAccessModifier = new DefaultAccessModifier();
@@ -19,6 +13,11 @@ public class Practice_Project2 {
         
         ProtectedAccessModifier protectedAccessModifier = new ProtectedAccessModifier();
         protectedAccessModifier.display();
+    }
+}
+class DefaultAccessModifier {
+    void display() {
+        System.out.println("This is a default access modifier.");
     }
 }
 
