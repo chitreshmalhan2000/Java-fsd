@@ -26,3 +26,8 @@ public class Practice_Project15 {
         throw new CustomException("This is a custom exception.");
     }
 }
+public class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
+    }
+}
