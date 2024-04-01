@@ -2,8 +2,8 @@ package Practice_Project25;
 import java.util.*;
 public class Practice_Project25 {
 	  public static void main(String[] args) {
-	        CircularLinkedList circularlinkedlist = new CircularLinkedList();
 	        System.out.println("Enter how many elements to be insert into Circular Linked List:");
+		CircularLinkedList circularlinkedlist = new CircularLinkedList();
 	        Scanner sc=new Scanner(System.in);
 	        int n,value;
 	        n=sc.nextInt();
