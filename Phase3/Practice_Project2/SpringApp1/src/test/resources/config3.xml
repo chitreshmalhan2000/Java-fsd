@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<bean id="stdObj" class="com.beans.StdBiodata">
+<property name="sname" value="Muralidhar"/>
+<property name="qualification">
+<list>
+<value>M.Tech</value>
+<value>B.Tech</value>
+</list>
+</property>
+<property name="courses">
+<set>
+<value>Java</value>
+<value>MySQL</value>
+<value>Spring</value>
+</set>
+</property>
+<property name="course_and_faculty">
+<map>
+<entry key="Java" value="Venugopal"/>
+<entry key="MySQL" value="Priya"/>
+<entry key="Spring" value="Sahasra"/>
+</map>
+</property>
+<property name="course_and_cost">
+<props>
+<prop key="Java">15000.00</prop>
+<prop key="MySQL">10000.00</prop>
+<prop key="Spring">25000.00</prop>
+</props>
+</property>
+</bean>
+</beans>

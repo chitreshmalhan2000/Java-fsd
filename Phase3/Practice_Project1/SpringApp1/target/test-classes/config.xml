@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<!--  Setter Depedency Injection  -->
+<bean class="com.beans.Employee" id="empObj">
+<property name="empno" value="1001"/>
+<property name="ename" value="Sahasra"/>
+<property name="job" value="HR-Manager"/>
+<property name="salary" value="100000.00"/>
+</bean>
+<!--  Constructor Dependency Injection  -->
+<bean class="com.beans.Student" id="stdobj">
+<constructor-arg name="rollno" value="101"/>
+<constructor-arg name="sname" value="Kumar"/>
+<constructor-arg name="course" value="Java"/>
+<constructor-arg name="fees" value="12000.00"/>
+</bean>
+</beans>
